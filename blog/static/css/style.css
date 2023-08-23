@@ -1,0 +1,713 @@
+/* Global Style */
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fafafa !important;
+}
+	
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+::selection {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none !important;
+    color: #1abc9c;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: #333333;
+}
+
+b {
+    font-weight: 600;
+    color: #333333;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    background-color: transparent;
+}
+
+*:focus {
+    outline: 0;
+}
+
+#main {
+    margin: 50px 0;
+}
+
+.main-color {
+    color: #1abc9c;
+}
+
+.page-body {
+    background: #ffffff;
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+
+.sub-title {
+    padding: 30px;
+}
+
+.sub-title h2 {
+    display: inline-block;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+
+}
+
+.sub-title i {
+    float: right;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.content-page {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    border-top: 1px dashed #dedede;
+    border-bottom: 1px dashed #dedede;
+}
+
+.grabbing {
+    cursor: url(../images/owl-carousel/grabbing.png) 8 8, move;
+}
+
+.button {
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 10px 60px;
+    padding-left: 0px;
+    display: inline-block;
+    margin: 8px 30px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    outline: none;
+    position: relative;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.button:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+   -webkit-font-smoothing: antialiased;
+}
+
+.button-style {
+    color: #1abc9c;
+    overflow: hidden;
+}
+
+.button-style:before {
+    position: absolute;
+    font-size: 27px;
+    line-height: 38px;
+    color: #1abc9c;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button-style:active:before {
+    color: #1abc9c;
+}
+
+.button-anim:before {
+    left: 60%;
+    opacity: 0;
+    top: 0;
+}
+
+.button-anim:hover:before {
+    left: 75%;
+    opacity: 1;
+}
+
+/* Menu */
+
+.menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 20px;
+    color: #fff;
+    background: #1abc9c;
+    padding: 12px;
+}
+
+.menu-link {
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-link:before,
+.menu-link:after {
+    content: " ";
+    display: table;
+}
+
+.menu-link:after {
+    clear: both;
+}
+
+.menu-link li {
+    display: inline-block;
+    margin: 2px 4px;
+}
+
+.menu-link li a {
+    display: block;
+    color: #333333;
+    text-align: center;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-link li a:hover {
+    color: #1abc9c;
+}
+
+
+
+/* About Me (Left Sidebar) */	
+
+.about-fixed {
+    position: fixed;
+    width: 20.8%;
+}
+
+.my-pic {
+    width: 100%;
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+
+.my-pic img {
+    width: 100%;
+}
+
+.my-detail {
+    text-align: center;
+    margin-bottom: 30px;
+    background: #ffffff;
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+
+.my-detail .white-spacing {
+    padding: 23px 0;
+    border-bottom: 1px dashed #cccccc;
+}
+
+.my-detail h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.my-detail span {
+    color: #c1c1c1;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+/* Blog Post & Single Blog Page */
+
+div.blog-post {
+    display: none;
+    margin-bottom: 50px;
+}
+
+.blog-post .post-image img {
+    width: 100%;
+}
+
+.blog-post .post-image p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.blog-post .post-image a {
+    font-weight: 600;
+}
+
+.blog-post .post-title h1 {
+    color: #333333;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.blog-post .post-title h2 {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.blog-post .post-info {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 10px 0;
+    color: #8c8c8c;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #696868;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* Image Popup */
+
+.image-popup {
+    cursor: cell;
+}
+
+
+/* Footer */
+
+.footer {
+    background: url(../images/bg/pattern-bg.png);
+    background-repeat: repeat;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 10px;
+}
+
+.footer p {
+    color: #797878;
+    font-size: 13px;
+    line-height: 25px;
+    padding: 0px 15px;
+    letter-spacing: 1px;
+}
+
+.footer li a {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+
+/* Syntax Highlighter */
+
+.syntaxhighlighter {
+    overflow: hidden;
+}
+
+.syntaxhighlighter .toolbar .item.printSource {
+    display: none !important;
+}
+
+
+/* Margin */
+
+.margin-0 {
+	margin: 0px !important;
+}
+
+/* Margin Top */
+
+.margin-top-0 {
+	margin-top: 0px !important;
+}
+
+.margin-top-10 {
+	margin-top: 10px !important;
+}
+
+.margin-top-20 {
+	margin-top: 20px !important;
+}
+
+.margin-top-30 {
+	margin-top: 30px !important;
+}
+
+.margin-top-40 {
+	margin-top: 40px !important;
+}
+
+.margin-top-50 {
+	margin-top: 50px !important;
+}
+
+.margin-top-60 {
+	margin-top: 60px !important;
+}
+
+.margin-top-70 {
+	margin-top: 70px !important;
+}
+
+.margin-top-80 {
+	margin-top: 80px !important;
+}
+
+.margin-top-90 {
+	margin-top: 90px !important;
+}
+
+.margin-top-100 {
+	margin-top: 100px !important;
+}
+
+.margin-top-120 {
+	margin-top: 120px !important;
+}
+
+.margin-top-150 {
+	margin-top: 150px !important;
+}
+
+.margin-top-200 {
+	margin-top: 200px !important;
+}
+
+
+/* Margin Bottom */
+
+.margin-bottom-0 {
+	margin-bottom: 0px !important;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px !important;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px !important;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px !important;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px !important;
+}
+
+.margin-bottom-50 {
+	margin-bottom: 50px !important;
+}
+
+.margin-bottom-60 {
+	margin-bottom: 60px !important;
+}
+
+.margin-bottom-70 {
+	margin-bottom: 70px !important;
+}
+
+.margin-bottom-80 {
+	margin-bottom: 80px !important;
+}
+
+.margin-bottom-90 {
+	margin-bottom: 90px !important;
+}
+
+.margin-bottom-100 {
+	margin-bottom: 100px !important;
+}
+
+.margin-bottom-120 {
+	margin-bottom: 120px !important;
+}
+
+.margin-bottom-150 {
+	margin-bottom: 150px !important;
+}
+
+.margin-bottom-200 {
+	margin-bottom: 200px !important;
+}
+
+
+
+/* Padding */
+
+.padding-0 {
+	padding: 0px !important;
+}
+
+
+/* Padding Top */
+
+.padding-top-0 {
+	padding-top: 0px !important;
+}
+
+.padding-top-10 {
+	padding-top: 10px !important;
+}
+
+.padding-top-20 {
+	padding-top: 20px !important;
+}
+
+.padding-top-30 {
+	padding-top: 30px !important;
+}
+
+.padding-top-40 {
+	padding-top: 40px !important;
+}
+
+.padding-top-50 {
+	padding-top: 50px !important;
+}
+
+.padding-top-60 {
+	padding-top: 60px !important;
+}
+
+.padding-top-70 {
+	padding-top: 70px !important;
+}
+
+.padding-top-80 {
+	padding-top: 80px !important;
+}
+
+.padding-top-90 {
+	padding-top: 90px !important;
+}
+
+.padding-top-100 {
+	padding-top: 100px !important;
+}
+
+.padding-top-120 {
+	padding-top: 120px !important;
+}
+
+.padding-top-150 {
+	padding-top: 150px !important;
+}
+
+.padding-top-200 {
+	padding-top: 200px !important;
+}
+
+
+/* Padding Bottom */
+
+.padding-bottom-0 {
+	padding-bottom: 0px !important;
+}
+
+.padding-bottom-10 {
+	padding-bottom: 10px !important;
+}
+
+.padding-bottom-20 {
+	padding-bottom: 20px !important;
+}
+
+.padding-bottom-30 {
+	padding-bottom: 30px !important;
+}
+
+.padding-bottom-40 {
+	padding-bottom: 40px !important;
+}
+
+.padding-bottom-50 {
+	padding-bottom: 50px !important;
+}
+
+.padding-bottom-60 {
+	padding-bottom: 60px !important;
+}
+
+.padding-bottom-70 {
+	padding-bottom: 70px !important;
+}
+
+.padding-bottom-80 {
+	padding-bottom: 80px !important;
+}
+
+.padding-bottom-90 {
+	padding-bottom: 90px !important;
+}
+
+.padding-bottom-100 {
+	padding-bottom: 100px !important;
+}
+
+.padding-bottom-120 {
+	padding-bottom: 120px !important;
+}
+
+.padding-bottom-150 {
+	padding-bottom: 150px !important;
+}
+
+.padding-bottom-200 {
+	padding-bottom: 200px !important;
+}
+
+
+
+/* Colors */
+
+.color-1 {
+	color: #f306a0;
+}
+
+.color-2 {
+	color: #d60bfb;
+}
+
+.color-3 {
+	color: #d8be10;
+}
+
+.color-4 {
+	color: #0fd28a;
+}
+
+.color-5 {
+	color: #f97400;
+}
+
+.color-6 {
+	color: #08a6f3;
+}
+
+
+
+/* Background Color */
+
+.bg-color-1 {
+	background-color: #f306a0;
+}
+
+.bg-color-2 {
+	background-color: #d60bfb;
+}
+
+.bg-color-3 {
+	background-color: #d8be10;
+}
+
+.bg-color-4 {
+	background-color: #0fd28a;
+}
+
+.bg-color-5 {
+	background-color: #f97400;
+}
+
+.bg-color-6 {
+	background-color: #08a6f3;
+}
+
+
+
+/* Tooltip Styles */
+
+.tooltip-inner {
+    padding: 10px 12px;
+    min-width: 150px;
+    width: 100%;
+}
+
+.tooltip.top {
+    margin-top: -2px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.tooltip.bottom {
+    margin-top:15px;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+.tooltip.left {
+    margin-right: 15px;
+}
+
+.tooltip.right {
+    margin-left: 15px;
+}
+
+.tooltip-color .tooltip-inner {
+    color: #fff;
+}
+
+
+
+/* UiPasta Credit */
+
+.uipasta-credit {
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.uipasta-credit a {
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+.uipasta-credit a:hover {
+    color: #333333;
+}
